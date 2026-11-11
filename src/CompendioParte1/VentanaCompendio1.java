@@ -6,11 +6,12 @@ public class VentanaCompendio1 extends JFrame{
     public VentanaCompendio1(){
         super("Compendio parte 1");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setBounds(50, 50, 600, 450);
+        this.setBounds(50, 50, 600, 600);
 
-        Panel miPanel = new Panel();
+        PanelGeneral miPanel = new PanelGeneral();
         miPanel.setBorder(BorderFactory.createTitledBorder("PanelSimpleFlowLayout"));
         this.add(miPanel);
+        this.pack();
         this.setVisible(true);
     }
 }
