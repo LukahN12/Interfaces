@@ -8,11 +8,19 @@ public class PanelCabecera  extends JPanel {
 
     public PanelCabecera(){
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+
         Box cabecera = Box.createHorizontalBox();
-        this.add(cabecera);
+
+        // titulo.setAlignmentY(Component.CENTER_ALIGNMENT);
+
+        cabecera.add(Box.createHorizontalGlue());
         cabecera.add(titulo);
-        cabecera.add(Box.createRigidArea(new Dimension(600, 90)));
+        //cabecera.add(Box.createHorizontalGlue());
+        cabecera.add(Box.createRigidArea(new Dimension(600, 80)));
+
         cabecera.setBorder(BorderFactory.createTitledBorder("cabecera"));
+
+        this.add(cabecera);
     }
 
 }
