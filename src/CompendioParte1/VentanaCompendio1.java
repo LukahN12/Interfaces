@@ -9,7 +9,6 @@ public class VentanaCompendio1 extends JFrame{
         this.setBounds(50, 50, 600, 600);
 
         PanelGeneral miPanel = new PanelGeneral();
-        miPanel.setBorder(BorderFactory.createTitledBorder("PanelSimpleFlowLayout"));
         this.add(miPanel);
         this.pack();
         this.setVisible(true);

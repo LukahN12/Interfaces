@@ -11,14 +11,13 @@ public class PanelCabecera  extends JPanel {
 
         Box cabecera = Box.createHorizontalBox();
 
-        // titulo.setAlignmentY(Component.CENTER_ALIGNMENT);
+        titulo.setAlignmentY(Component.CENTER_ALIGNMENT);
 
         cabecera.add(Box.createHorizontalGlue());
         cabecera.add(titulo);
-        //cabecera.add(Box.createHorizontalGlue());
-        cabecera.add(Box.createRigidArea(new Dimension(600, 80)));
-
-        cabecera.setBorder(BorderFactory.createTitledBorder("cabecera"));
+        cabecera.add(Box.createHorizontalGlue());
+        cabecera.add(Box.createRigidArea(new Dimension(5, 80)));
+        cabecera.setMaximumSize(cabecera.getPreferredSize());
 
         this.add(cabecera);
     }
