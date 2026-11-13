@@ -54,6 +54,8 @@ public class PanelEjercicio4 extends JPanel{
 
         modifiers.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 
+        contenido.setVisible(!contenido.isVisible());
+
         cuartoEjercicioBoton.addActionListener(listener);
         deslizador.addChangeListener(changeListener);
     }

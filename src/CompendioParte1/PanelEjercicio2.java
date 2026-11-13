@@ -57,6 +57,8 @@ public class PanelEjercicio2 extends JPanel{
 
         modifiers.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 
+        contenido.setVisible(!contenido.isVisible());
+
         segundoEjercicioBoton.addActionListener(listener);
         combo.addActionListener(listener);
     }

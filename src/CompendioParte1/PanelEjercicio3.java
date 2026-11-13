@@ -71,6 +71,8 @@ public class PanelEjercicio3 extends JPanel{
 
         modifiers.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 
+        contenido.setVisible(!contenido.isVisible());
+
         tercerEjercicioBoton.addActionListener(listener);
         Modifier1.addActionListener(listener);
         Modifier2.addActionListener(listener);
